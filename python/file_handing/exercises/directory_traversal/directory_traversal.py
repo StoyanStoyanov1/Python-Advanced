@@ -12,7 +12,7 @@ def traverse_dir(current_path, files_by_ext):
 
 
 files_by_ext = {}
-traverse_dir(".", files_by_ext)
+traverse_dir("", files_by_ext)
 
 with open("result.txt", "w") as result:
     for ext, files in sorted(files_by_ext.items()):
